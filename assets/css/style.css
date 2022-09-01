@@ -451,10 +451,17 @@ footer::after {
   }
 
   .stranger-things-gallery {
-    max-width: 1200px;
+    width: 100%;
     text-align: left;
     margin-top: 2rem;
-    background-position: 180% 37%;
+    background-position: 110%;
+    background-size: 40%;
+  }
+
+  .gallery-section-content,
+  section.form {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .stranger-things-gallery h2 {
@@ -469,5 +476,57 @@ footer::after {
   .gallery ul li {
     height: 18rem;
     width: 18rem;
+  }
+
+  section.form > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-form {
+    max-width: 40%;
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .form form {
+    width: 50%;
+  }
+  
+  .form form input,
+  .form form textarea,
+  .form form label {
+    font-size: 0.9rem;
+    height: auto;
+  }
+
+  .form form input,
+  .form form label {
+    line-height: 1rem;
+  }
+
+  .form form textarea {
+    line-height: 1.3rem;
+  }
+
+  .form form button {
+    width: 50%;
+    align-self: center;
+  }
+
+  footer p {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  footer::before {
+    left: 0;
+    bottom: -70%;
+  }
+
+  footer::after {
+    left: 80%;
+    top: -70%;
   }
 }
